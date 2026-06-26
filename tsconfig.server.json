@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "outDir": ".server-dist",
+    "rootDir": ".",
+    "types": ["node"],
+    "paths": {
+      "@workspace/db": ["./lib/db/src/index.ts"],
+      "@workspace/db/schema": ["./lib/db/src/schema/index.ts"],
+      "@workspace/api-zod": ["./lib/api-zod/src/index.ts"]
+    }
+  },
+  "include": ["server.ts", "server/**/*.ts", "lib/**/*.ts"],
+  "exclude": ["node_modules", ".next", "app", "components", "hooks"]
+}

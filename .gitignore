@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+.next/
+out/
+
+# Production build
+server.mjs
+server.mjs.map
+.server-dist/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Uploads (user-generated content — mount a volume in production)
+uploads/
+chat-uploads/
+
+# Drizzle migrations (keep if you want version-controlled migrations)
+# drizzle/
+
+# TypeScript incremental build
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
